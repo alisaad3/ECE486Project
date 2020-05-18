@@ -46,6 +46,7 @@ Arithmetic_Instructions = 333
 Logical_Instructions = 50
 Memory_Access_Instructions = 103
 Control_Transfer_Instructions = 152 
+Program_Counter = 100
 R1 = 1200 # Need to be changed to the equatiion on how to get the contents of R1
 R2 = 1400 # Need to be changed to the equatiion on how to get the contents of R2
 R3 = 100  # Need to be changed to the equatiion on how to get the contents of R3
@@ -74,8 +75,8 @@ print("Logical Instructions:", Logical_Instructions)
 print("Memory Access Instructions:", Memory_Access_Instructions)
 print("Control Transfer Instructions:", Control_Transfer_Instructions, "\n\n")
 print("Final Register State: \n")
-print("(Contents shown in decimal number system; not in base 16. In addition, only those registers are shown whose contents change during the program)")
-print("Program Counter: 100 \n")
+print("(Contents shown in decimal number system; not in base 16. In addition, only those registers are shown whose contents change during the program) \n")
+print("Program Counter:", Program_Counter)
 print("R1:", R1)
 print("R2:", R2)
 print("R3:", R3)
