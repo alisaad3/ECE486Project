@@ -8,9 +8,14 @@
 # Need to change the numbers in the file from Hex to binary
 # Then parse it to get Rs, Rt, Rd intaking the correct numbers
 # To run the correct operation   
-f = open("sample_memory_image.txt", "r")
-print(f.read())
 
+f = open("sample_memory_image.txt", "r")            # Open and Read contents inside of file 
+for x in f:                                         # Name The contents in the file x, loop through file line by line
+    scale = 16                                      # equals to hexaddecimal
+    num_of_bits = 32                                # Number of bits is 32 per line 
+    y = bin(int(x, scale))[2:].zfill(num_of_bits)   #Conver Hex to Binary
+    print(y)                                        # Print to make sure numbers are being converted correcctly 
+    
 # opcode 000000 is ADD instruction, rest of opcode instructions in Project specs pdf
 # After we read in instruction goes case statment to decide the formart or  if statement
 
