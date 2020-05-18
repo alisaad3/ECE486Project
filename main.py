@@ -16,6 +16,34 @@ for x in f:                                         # Name The contents in the f
     y = bin(int(x, scale))[2:].zfill(num_of_bits)   #Conver Hex to Binary
     print(y)                                        # Print to make sure numbers are being converted correcctly 
     
+''' this is how you comment out a section
+# An idea of switch Statement for opcode after parsing 
+opcode = {
+    # Arithmetic Instructions
+    '000000' : ADDRdRsRt,
+    '000001' : ADDRtRsIm, 
+    '000010' : SUBRdRsRt,
+    '000011' : SUBRtRsIm,
+    '000100' : MULRdRst,
+    '000101' : MULRtRsIm,
+    # Logical Instructions
+    '000110' : ORRdRsRt,
+    '000111' : ORIRtRsIM,
+    '001000' : ANDRdRsRt,
+    '001001' : ANDIRtRsIM,
+    '001010' : XORRdRsRt,
+    '001011' : XORIRtRsIM,
+    # Memory Access Instructions
+    '001100' : LDWRtRsIm,
+    '001101' : STWRtRsIm,
+    # Control Flow Instructions
+    '001110' : BZRsx,
+    '001111' : BEQRsRtx,
+    '010000' : JRRs,
+    '010001' : HALT
+    }
+'''  
+ 
 # opcode 000000 is ADD instruction, rest of opcode instructions in Project specs pdf
 # After we read in instruction goes case statment to decide the formart or  if statement
 
